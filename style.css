@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, rgb(255, 115, 0), rgb(255, 166, 0), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(0, 214, 18), rgb(7, 212, 0));
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+#image {
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 300px;
+    border-radius: 100%;
+    border: 10px solid #333;
+}
+
+#quote {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#bio {
+    margin: 50px 100px;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.more {
+    width: auto;
+    margin: 50px 100px;
+}
+
+.more .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+}
+
+.more .grid-container .grid-item {
+    overflow: hidden;
+}
+
+.more .grid-container img {
+    height: 150px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.more .grid-container h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 1079px) {
+    .more .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    #bio {
+        margin: 50px 70px;
+        text-align: justify;
+    }
+
+    .more {
+        margin: 50px 70px;
+    }
+}
+
+@media(max-width: 860px) {
+    .more {
+        margin: 50px 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    #bio {
+        margin: 50px 25px;
+    }
+
+    .more {
+        margin: 50px 25px;
+    }
+
+    .more .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+}
